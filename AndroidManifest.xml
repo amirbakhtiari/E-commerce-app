@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pravesh.apnalot"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.pravesh.apnalot.app.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.pravesh.apnalot.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pravesh.apnalot.MainActivity"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchResultsActivity" />
+            <intent-filter>
+                <action android:name="com.pravesh.apnalot.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <!-- Search results activity -->
+        <activity android:name="com.pravesh.apnalot.SearchResultsActivity"
+            android:parentActivityName="com.pravesh.apnalot.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+ 
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        
+       
+        
+        <activity android:name="com.pravesh.apnalot.login.LoginActivity"
+                  android:label="Login to your Account"
+                  android:parentActivityName="com.pravesh.apnalot.HomePage1">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.pravesh.apnalot.HomePage1" />
+        </activity>
+        
+         <!--  Entry for RegisterActivity.class -->
+        <activity android:name="com.pravesh.apnalot.login.RegisterActivity"
+                  android:label="Register New Account"
+                  android:parentActivityName="com.pravesh.apnalot.HomePage1">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.pravesh.apnalot.HomePage1" />
+        </activity>
+        
+        
+       
+        
+        <activity
+            android:name="com.pravesh.apnalot.HomePage1"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.pravesh.apnalot.HOMEPAGE1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.pravesh.apnalot.ExpandableList"
+            android:label="@string/app_name" 
+            android:parentActivityName="com.pravesh.apnalot.HomePage1">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.pravesh.apnalot.HomePage1" />
+            <intent-filter>
+                <action android:name="com.pravesh.apnalot.EXPANDABLELIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.pravesh.apnalot.ExpandableListForNovel"
+            android:label="@string/app_name" 
+            android:parentActivityName="com.pravesh.apnalot.HomePage1">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.pravesh.apnalot.HomePage1" />
+            
+            <intent-filter>
+                <action android:name="com.pravesh.apnalot.EXPANDABLELISTFORNOVEL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.pravesh.apnalot.Policies"
+            android:label="@string/app_name" 
+            android:parentActivityName="com.pravesh.apnalot.HomePage1">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.pravesh.apnalot.HomePage1" />
+            <intent-filter>
+                <action android:name="com.pravesh.apnalot.POLICIES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name="com.pravesh.apnalot.ContactUs"
+            android:label="@string/app_name" 
+            android:parentActivityName="com.pravesh.apnalot.HomePage1">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.pravesh.apnalot.HomePage1" />
+            <intent-filter>
+                <action android:name="com.pravesh.apnalot.CONTACTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+          <activity
+            android:name="com.pravesh.apnalot.ProductList"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.pravesh.apnalot.PRODUCTLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>

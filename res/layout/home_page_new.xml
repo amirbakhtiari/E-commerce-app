@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">   
+
+<!-- Main Linear Layout-->
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+    android:orientation="vertical" >
+    
+    
+    <Gallery 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gallery"/>
+
+ 
+    <!-- 1st Part -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feed_item_margin_left"
+            android:layout_marginTop="@dimen/feed_item_margin_text"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="New Releases"
+                android:textSize="20sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/innerLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/asthma_action_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_one" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SilkWorm"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/controlled_medication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_two" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inferno"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/as_needed_medication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_three" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khushwant S..."
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/rescue_medication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_four" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sahara"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/your_symptoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_five" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take Me Home"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/your_triggers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_six" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lucky One"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/wheeze_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/many_more" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    
+    
+    
+    
+    <!-- 2nd Part -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feed_item_margin_left"
+            android:layout_marginTop="@dimen/feed_item_margin_text"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Upcoming"
+                android:textSize="20sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsv2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/innerLay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/asthma_action_plan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_seven" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SilkWorm"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/controlled_medication1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_eight" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inferno"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/as_needed_medication1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_nine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khushwant S..."
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/rescue_medication1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_ten" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sahara"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/your_symptoms1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_eleven" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take Me Home"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+               
+
+                
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/wheeze_rate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/many_more" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    
+    
+    <!-- 3rd Part -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feed_item_margin_left"
+            android:layout_marginTop="@dimen/feed_item_margin_text"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Best Sellers"
+                android:textSize="20sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/innerLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/asthma_action_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_twelve" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SilkWorm"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/controlled_medication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_thirteen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inferno"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/as_needed_medication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_fourteen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khushwant S..."
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/rescue_medication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_fifteen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sahara"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/your_symptoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_sixteen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take Me Home"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/wheeze_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/many_more" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    
+    
+    
+    <!-- 4th Part -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feed_item_margin_left"
+            android:layout_marginTop="@dimen/feed_item_margin_text"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrance Exam Special"
+                android:textSize="20sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/innerLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/asthma_action_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_seventeen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SilkWorm"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/controlled_medication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_eighteen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inferno"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/as_needed_medication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_nineteen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khushwant S..."
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/rescue_medication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_twenty" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sahara"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/your_symptoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="@dimen/feed_item_profile_pic"
+                        android:layout_height="@dimen/feed_item_profile_pic"
+                        android:src="@drawable/home_image_twentyone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take Me Home"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+                
+                
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="115dp"
+                    android:background="@color/separator" />
+
+                <LinearLayout
+                    android:id="@+id/wheeze_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/many_more" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    
+    
+    
+</LinearLayout>
+
+</ScrollView> 

@@ -1,0 +1,70 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pravesh.apnalot.MainActivity" >
+
+    <item android:id="@+id/action_search"
+          android:icon="@drawable/ic_action_search"
+          android:title="@string/action_search"
+          android:showAsAction="always"
+          android:actionViewClass="android.widget.SearchView"/>
+     
+   
+     
+    
+    <item
+    android:id="@+id/a_More"
+    android:icon="@drawable/ic_action_overflow"
+    android:showAsAction="always"
+    android:title="More">
+    
+    <menu>
+        
+      <!-- Login -->
+    <item android:id="@+id/action_login"
+          android:icon="@drawable/ic_action_login"
+          android:title="@string/action_login"
+          android:showAsAction="ifRoom" />   
+        
+    <!-- Wishlist -->
+    <item android:id="@+id/action_wishlist"
+          android:icon="@drawable/ic_action_wishlist"
+          android:title="@string/action_wishlist"
+          android:showAsAction="ifRoom" />
+    
+     <!-- Cart -->
+    <item android:id="@+id/action_cart"
+          android:icon="@drawable/ic_action_cart"
+          android:title="@string/action_cart"
+          android:showAsAction="always" />
+     
+    <!-- Help -->
+    <item android:id="@+id/action_rateapp"
+          android:icon="@drawable/ic_action_rate"
+          android:title="@string/action_rate"
+          android:showAsAction="ifRoom"/>
+    
+    <!-- Help -->	
+    <item android:id="@+id/action_share"
+          android:icon="@drawable/ic_action_share"
+          android:title="@string/action_share"
+          android:showAsAction="ifRoom"/>
+    
+    <!-- Help -->
+    <item android:id="@+id/action_contact"
+          android:icon="@drawable/ic_action_contact"
+          android:title="@string/action_contact"
+          android:showAsAction="ifRoom"/>
+    
+    <!-- Help -->
+    <item android:id="@+id/action_policies"
+          android:icon="@drawable/ic_action_policies"
+          android:title="@string/action_policies"
+          android:showAsAction="ifRoom"/>
+     
+   
+    </menu>
+    </item>
+    
+
+</menu>
